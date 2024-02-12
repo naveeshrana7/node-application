@@ -1,0 +1,39 @@
+/* Apply styles to form */
+.custom-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Apply styles to input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Apply styles to submit button */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue color for button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.cont{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

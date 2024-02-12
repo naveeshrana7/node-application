@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <main>
+    <header>
+        <div class="container-nav">
+            
+            <nav>
+                <ul>
+                    <li><a href="./main.html">DailyNews</a></li>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="./sports.html">Sports</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+        <div class="container">
+            <div class="weather-report">
+                
+            </div>
+            <div class="image-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="https://unsplash.com/photos/business-newspaper-article-WYd_PkCa1BY" alt="Image 1">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="" alt="Image 2">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="" alt="Image 3">
+                            </a>
+                        </div>
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="latest-news">
+                <h2>Latest News</h2>
+                <div class="news-articles">
+                    
+                    <article>
+                        <a href="">
+                        <h3>Latest News 1</h3>
+                    </a>
+                    </article>
+                
+                    <article>
+                        <a href="">
+                            <h3>Latest News 1</h3>
+                        </a>
+                        
+                    </article>
+                    <article>
+                        <a href="">
+                            <h3>Latest News 1</h3>
+                        </a>
+                        
+                    </article>
+                </div>
+                <div class="related-news">
+                    <p>Here comes the Discription</p>
+                </div>
+            </div>
+            <div class="chat-box">
+                </div>
+        </div>
+
+        <script src="sports.js"></script>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DailyNews</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, // Change this to your desired autoplay interval in milliseconds
+            },
+        });
+    </script>
+</body>
+</html>
