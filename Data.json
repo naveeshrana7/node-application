@@ -1,0 +1,25 @@
+[
+    {
+      "title": "Sample Title 1",
+      "Discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit 1.",
+      "url": "https://example.com/sample-url-1",
+      "urlToImage": "https://example.com/sample-image-1.jpg",
+      "published": "2024-02-06T12:30:00Z"
+    },
+    {
+      "title": "Sample Title 2",
+      "Discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2.",
+      "url": "https://example.com/sample-url-2",
+      "urlToImage": "https://example.com/sample-image-2.jpg",
+      "published": "2024-02-06T13:45:00Z"
+   
+    },
+    {
+      "title": "Sample Title 3",
+      "Discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit 3.",
+      "url": "https://example.com/sample-url-3",
+      "urlToImage": "https://example.com/sample-image-3.jpg",
+      "published": "2024-02-06T15:00:00Z"
+    }
+  ]
+  

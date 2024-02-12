@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        main {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/main">Home</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/main">Add</a>
+          <li class="nav-item">
+            <li class="nav-item">
+                <a class="nav-link" href="/items">all items</a>
+              <li class="nav-item">
+            <a class="nav-link" href="/logout">logout</a>
+          </li>
+        </ul>
+      </nav>
+<main>
+   
+    <% if(data != null) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i = 0; i < data.length; i++) { %>
+                <tr>
+                    <td><%= data[i].title %></td>
+                    <td><%= data[i].Discription %></td>
+                    <td><form action="/delete" method="post"><Button value=<%= data[i]._id %> name="delete">delete</Button></form></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    <% } %>
+</main>
+
+</body>
+</html>
